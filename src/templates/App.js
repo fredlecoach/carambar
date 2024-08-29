@@ -1,13 +1,15 @@
 // Assurez-vous que le chemin pointe correctement vers le fichier Header.js
 import Header from "../models/Header";
-import Jokes from "../models/VueRandom"
+import RandomJokes from "../models/VueRandom"
+import AllJokes from "../models/VueAll";
 
 
 function App() {
   return (
     <>
       <Header />
-      <Jokes />
+      <RandomJokes />
+      <AllJokes />
     </>
   );
 }

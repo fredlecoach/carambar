@@ -6,12 +6,11 @@ const app = express();
 // Middleware pour gérer les requêtes JSON
 app.use(express.json());
 
-// Utilisation des routes définies dans randomAPi.js
-app.use('/api', router);
+// Utilisation des routes définies dans routeAPi.js
+app.use('/api/v1', router);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
 
-export default app

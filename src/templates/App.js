@@ -9,9 +9,9 @@ function App() {
       <div
         style={{
           backgroundImage: `url(${background})`,
-          backgroundSize: "cover", // Optionnel : pour couvrir tout le div
-          backgroundPosition: "center", // Optionnel : pour centrer l'image
-          minHeight: "100vh", // Optionnel : pour s'assurer que le div couvre toute la hauteur de la page
+          backgroundSize: "cover", 
+          backgroundPosition: "center", 
+          minHeight: "100vh", 
         }}
       >
         <Header />

@@ -1,5 +1,5 @@
 import express from 'express';
-import randomJoke from "../controllers/JokeRandomController"; // Assurez-vous que le chemin est correct
+import randomJoke from "../controllers/JokeRandomController";
 import readAllJoke from '../controllers/JokeReadAllController';
 
 

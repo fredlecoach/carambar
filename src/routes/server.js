@@ -1,9 +1,9 @@
 import express from 'express';
-import router from './routeApi'; // Assurez-vous que le chemin est correct
+import router from './routeApi'; 
 
 const app = express();
 
-// Middleware pour gérer les requêtes JSON
+// gérer les requêtes JSON
 app.use(express.json());
 
 // Utilisation des routes définies dans routeAPi.js

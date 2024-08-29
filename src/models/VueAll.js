@@ -6,7 +6,7 @@ function AllJokes() {
   const fetchAllJokes = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("/api/readAllJoke"); // Assurez-vous que l'URL est correcte
+      const response = await fetch("/api/readAllJoke"); 
       const data = await response.json();
       setAll(data);
     } catch (error) {

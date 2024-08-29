@@ -17,7 +17,7 @@ function RandomJokes() {
 
   return (
     <form className="d-flex justify-content-center">
-      <button type="submit" className='btn btn-warning mx-1' onClick={fetchRandomJoke}>Générer une blague</button>
+      <button type="submit" className='btn btn-dark mx-1' onClick={fetchRandomJoke}>Générer une blague</button>
       <textarea style={{ width: "500px" }} id="JokeRandom" value={joke} readOnly />
     </form>
   );

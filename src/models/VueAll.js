@@ -16,7 +16,7 @@ function AllJokes() {
 
   return (
     <form className="d-flex justify-content-center my-5">
-      <button type="submit" className="btn btn-warning mx-1" onClick={fetchAllJokes}>
+      <button type="submit" className="btn btn-dark mx-1" onClick={fetchAllJokes}>
         Voir toutes les blagues
       </button>
       <textarea

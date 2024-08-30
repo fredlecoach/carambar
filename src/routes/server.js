@@ -3,10 +3,10 @@ import router from './routeApi';
 
 const app = express();
 
-// gérer les requêtes JSON
+// Gérer les requêtes JSON
 app.use(express.json());
 
-// Utilisation des routes définies dans routeAPi.js
+// Utilisation des routes définies dans routeApi.js
 app.use('/api/v1', router);
 
 const PORT = process.env.PORT || 3000;

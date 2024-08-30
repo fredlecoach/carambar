@@ -6,8 +6,8 @@ function RandomJokes() {
   const fetchRandomJoke = async (e) => {
     e.preventDefault();
     try {
-      // on récupère la blague avec fetch
-      const response = await fetch("/api/random-joke");
+      // Récupérer la blague aléatoire avec fetch
+      const response = await fetch("/api/v1/random-joke");
       const data = await response.json();
       setJoke(data.setup + " " + data.punchline);
     } catch (error) {

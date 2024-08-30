@@ -8,7 +8,7 @@ function AddJoke() {
     e.preventDefault();
 
     try {
-      const response = await fetch("/api/add-joke", {
+      const response = await fetch("/api/v1/add-joke", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -17,7 +17,7 @@ function AddJoke() {
       });
 
       if (response.ok) {
-        const data = await response.json();
+        // const data = await response.json();
         setMessage("Blague ajoutée avec succès !");
         setContent("");  // Réinitialiser le champ de texte après l'ajout
       } else {

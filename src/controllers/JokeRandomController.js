@@ -1,8 +1,7 @@
-import Jokes from "../models/Data"
+import Jokes from "../models/Data";
 
 function getRandomJoke() {
   const randomIndex = Math.floor(Math.random() * Jokes.length);
-  console.log('Blague aléatoire:', Jokes[randomIndex]);
   return Jokes[randomIndex];
 }
 

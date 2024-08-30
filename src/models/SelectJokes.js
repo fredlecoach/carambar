@@ -8,7 +8,7 @@ function SelectJoke () {
     e.preventDefault();
 
     try {
-      const response = await fetch("/api/select-joke");
+      const response = await fetch("/api/v1/select-joke");
       const data = await response.json();
       setSelect(data.setup + " " + data.punchline);
     } catch (error) {

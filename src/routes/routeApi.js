@@ -11,4 +11,10 @@ router.get('/random-joke', randomJoke);
 // route pour lire toutes les blagues
 router.get('/read-all-joke', readAllJoke);
 
+// selectionner une blague
+router.get('/select-joke/:id', selectJokeById); 
+
+// ajouter une blague
+router.get('/add-joke', AddJoke)
+
 export default router;

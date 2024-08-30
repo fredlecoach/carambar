@@ -1,6 +1,6 @@
 const { Joke } = import("../models")
 
-const readJoke = async(req, res) => {
+const selectJokebyId = async(req, res) => {
   try {
     const joke = await Joke.findById(req.params.id)
     res.status(200).json(joke)
@@ -9,4 +9,4 @@ const readJoke = async(req, res) => {
   
 }
 
-export default readJoke
+export default selectJokebyId
